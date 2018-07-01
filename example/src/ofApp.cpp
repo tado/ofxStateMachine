@@ -4,15 +4,15 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    // setup shared data
-    stateMachine.getSharedData().counter = 0;
-    stateMachine.getSharedData().lastUpdate = ofGetElapsedTimeMillis();
-    stateMachine.getSharedData().font.load("vag.ttf", 50);
-    
-    // initialise state machine
-    stateMachine.addState<RedState>();
-    stateMachine.addState<GreenState>();
-    stateMachine.changeState("green");
+	// setup shared data
+	stateMachine.getSharedData().counter = 0;
+	stateMachine.getSharedData().lastUpdate = ofGetElapsedTimeMillis();
+	stateMachine.getSharedData().font.load("vag.ttf", 50);
+	
+	// initialise state machine
+	stateMachine.addState<RedState>();
+	stateMachine.addState<GreenState>();
+	stateMachine.changeState("green");
 }
 
 //--------------------------------------------------------------
@@ -53,16 +53,6 @@ void ofApp::mousePressed(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseEntered(int x, int y){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseExited(int x, int y){
 
 }
 
